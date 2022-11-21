@@ -9,8 +9,8 @@
     <title>Home Page</title>
 
     <!-- RIFERIMENTI BOOTSTRAP ITALIA 2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.0.4/dist/css/bootstrap-italia.min.css" integrity="sha256-OAlsfaN58WYNlpH0uSz3xuJ8vrujFxoIlIFr8rySXqc=" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.0.4/dist/js/bootstrap-italia.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.0.9/dist/css/bootstrap-italia.min.css" integrity="sha256-OAlsfaN58WYNlpH0uSz3xuJ8vrujFxoIlIFr8rySXqc=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.0.9/dist/js/bootstrap-italia.bundle.min.js"></script>
 
 
 </head>
@@ -20,7 +20,7 @@
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.0.4/dist/js/bootstrap-italia.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.0.9/dist/js/bootstrap-italia.bundle.min.js" crossorigin="anonymous"></script>
 <header class="it-header-wrapper">
 
     <style>
@@ -67,7 +67,7 @@
                         for ($i = 0; $i < $Righe; $i++) {
                             echo ("<tr>");
                             for ($x = 0; $x <= $Colonne; $x++){
-                                echo("<td> $i,$x</td>");
+                                echo("<td>$i,$x</td>");
                             }
                             echo ("</tr>");
                         }
