@@ -65,14 +65,15 @@
                     <div class="card card-bg shadow ">
                         <div class="card-body">
                             <?php
+                            /*
                             $Titolo = 'prova';
                             $Righe = 10;
                             $Colonne = 10;
 
-                            echo("<h1> $Titolo </h1>");
-                            echo("<table>");
+                            echo('<h1> $Titolo </h1>');
+                            echo('<table>');
                             for ($i = 0; $i < $Righe; $i++) {
-                                echo("<tr>");
+                                echo('<tr>');
                                 for ($x = 0; $x <= $Colonne; $x++) {
                                     echo("<td>$i,$x</td>");
                                 }
@@ -85,6 +86,37 @@
                             -------------
                             */
                             ?>
+                        </div>
+                        <div class="card-body">
+                            <?php
+                            $Titolo = 'prova';
+                            $Righe = 10;
+                            $Colonne = 10;
+                            ?>
+                            <table>
+                                <tr>
+                                    <th colspan="<?=$Colonne?>">
+                                        <?=$Titolo?>
+                                    </th>
+                                </tr>
+                                <?php
+                                    for ($i = 0; $i < $Righe; $i++) {
+                                ?>
+                                <tr>
+                                    <?php
+                                        for ($x = 0; $x <= $Colonne; $x++) {
+                                    ?>
+                                        <td>
+                                            <?=$i.','.$x?>
+                                        </td>
+                                    <?php
+                                        }
+                                    ?>
+                                </tr>
+                                <?php
+                                    }
+                                ?>
+                            </table>
                         </div>
                     </div>
                 </div>
