@@ -51,32 +51,50 @@
                                 </div>
                             </a>
                         </div>
+                        <div class="it-right-zone">
+                            <h4><?php echo $_SERVER["SERVER_SOFTWARE"]?></h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row justify-content-center" style="margin: 30px">
-            <div class="col-auto">
+</header>
+        <div class="row" style="margin: 30px">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
                 <div class="card-wrapper card-space">
-                    <div class="card card-bg shadow ">
+                    <div class="card card-bg shadow card-big no-after">
                         <div class="card-body">
-                            <h1>PHP Info</h1>
-							<p>Perche' ho deciso di farlo? Boh, chi lo sa</p>
-                            <a href="phpinfo.php">Nel dubbio clicca qua</a>
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="card-title h5">PHP Info</h5>
+                                    <p class="card-text">Perche' ho deciso di farlo? Boh, chi lo sa</p>
+                                    <div class="it-card-footer">
+                                        <a href="phpinfo.php">Nel dubbio clicca qua</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card card-bg shadow ">
-                        <div class="card-body">
-                            <h1>Tabella tabellosa e dinamica</h1>
-                            <p>Perche' ho deciso di farlo? Mi piacciono le tabelle dinamiche, problemi?</p>
-                            <a href="/esercizi/formTable.php">Se le ami anche te clicca qua</a>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card-wrapper card-space">
+                            <div class="card card-bg shadow card-big no-after">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="card-title h5">Tabella tabellosa e dinamica</h5>
+                                            <p class="card-text">Perche' ho deciso di farlo? Mi piacciono le tabelle dinamiche, problemi?</p>
+                                            <div class="it-card-footer">
+                                                <a href="/esercizi/formTable.php">Se le ami anche te clicca qua</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </body>
 </html>
