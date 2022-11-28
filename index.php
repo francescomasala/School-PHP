@@ -63,7 +63,7 @@
                     <div class="card card-bg shadow ">
                         <div class="card-body">
                             <h1>Demo PHP</h1>
-                            <?php echo '<p>Hello World</p>'; ?>
+							<?php echo '<p>Hello World</p>'; ?>
                         </div>
                     </div>
                 </div>

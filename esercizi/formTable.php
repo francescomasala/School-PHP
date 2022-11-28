@@ -6,7 +6,7 @@
     <!-- RIFERIMENTI GENERICI -->
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <title>Home Page</title>
+    <title>Creazione tabella con POST</title>
 
     <!-- RIFERIMENTI BOOTSTRAP ITALIA 2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.0.4/dist/css/bootstrap-italia.min.css"
@@ -31,7 +31,7 @@
 
     <style>
         table, tr, td {
-            border: 1px solid #0066CC;
+            border: 2.5px solid #0066CC;
         }
 
         td {
@@ -65,6 +65,18 @@
                     <div class="card card-bg shadow ">
                         <div class="card-body">
 							<?php
+								
+								if ($_SERVER["REQUEST_METHOD"] == "POST") {
+									$Righe = htmlspecialchars($_REQUEST['row']);
+									$Colonne = htmlspecialchars($_REQUEST['col']);
+									$Titolo = htmlspecialchars($_REQUEST['name']);
+								} else {
+									$Titolo = 'Test';
+									$Righe = 5;
+									$Colonne = 5;
+								}
+							?>
+							<?php
 								/*
 								$Titolo = 'prova';
 								$Righe = 10;
@@ -87,15 +99,14 @@
 								*/
 							?>
                         </div>
-                        <div class="card-body">
-							<?php
-								$Titolo = 'prova';
-								$Righe = 10;
-								$Colonne = 10;
-							?>
+						<?php
+							if ($_SERVER["REQUEST_METHOD"] == "POST") {
+						?>
+                        <div class="card-body col-auto justify-content-center">
+                            <h4 class="card-title text-center"><?= $Titolo ?></h4>
                             <table>
 								<?php
-									for ($i = 0; $i < $Righe; $i++) {
+									for ($i = 0; $i <= $Righe; $i++) {
 										?>
                                         <tr>
 											<?php
@@ -112,6 +123,34 @@
 									}
 								?>
                             </table>
+							<?php
+								} else {
+								?>
+                                <div class="card-body col-auto justify-content-center">
+                                    <h4 class="card-title text-center">Creazione tabella con POST</h4>
+                                    <br>
+                                    <form action="/esercizi/formTable.php" enctype="application/x-www-form-urlencoded"
+                                          method="POST">
+                                        <div class="col-auto">
+                                            <div class="form-group col">
+                                                <input type="text" class="form-control"
+                                                       id="name" name="name" placeholder="Titolo della tabella">
+                                                <br>
+                                                <input type="number" class="form-control"
+                                                       id="col" name="col" placeholder="Colonne da generare">
+                                                <br>
+                                                <input type="number" class="form-control"
+                                                       id="row" name="row" placeholder="Righe da generare">
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-primary">Conferma</button>
+                                            </div>
+                                    </form>
+                                </div>
+								<?php
+							}
+							?>
+
                         </div>
                     </div>
                 </div>

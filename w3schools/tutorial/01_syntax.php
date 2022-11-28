@@ -2,14 +2,14 @@
 <html>
 <body>
 <?php
-echo "Il mio primo script php <br>";
+	echo "Il mio primo script php <br>";
 ?>
 
 <br>
 
 <?php
-$nome = "Francesco";
-echo "Il mio nome è " . $nome . "<br>"
+	$nome = "Francesco";
+	echo "Il mio nome è " . $nome . "<br>"
 ?>
 </body>
 </html>
