@@ -6,5 +6,5 @@ deploy:
     - master
   environment:
     name: Default
-    url: https://masala5ina2022.altervista.org/
+    url: https://masala5ina2022.altervista.org
 
