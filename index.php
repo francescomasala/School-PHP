@@ -62,8 +62,16 @@
                 <div class="card-wrapper card-space">
                     <div class="card card-bg shadow ">
                         <div class="card-body">
-                            <h1>Demo PHP</h1>
-							<?php echo '<p>Hello World</p>'; ?>
+                            <h1>PHP Info</h1>
+							<p>Perche' ho deciso di farlo? Boh, chi lo sa</p>
+                            <a href="phpinfo.php">Nel dubbio clicca qua</a>
+                        </div>
+                    </div>
+                    <div class="card card-bg shadow ">
+                        <div class="card-body">
+                            <h1>Tabella tabellosa e dinamica</h1>
+                            <p>Perche' ho deciso di farlo? Mi piacciono le tabelle dinamiche, problemi?</p>
+                            <a href="/esercizi/formTable.php">Se le ami anche te clicca qua</a>
                         </div>
                     </div>
                 </div>
