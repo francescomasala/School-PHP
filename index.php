@@ -21,7 +21,7 @@
                         <h2>Sono dei form molto ez con validazione.</h2>
                         <p>Sono passivo aggressivo? assolutamente si'.</p>
                     </hgroup>
-                    <a href="/esercizi/tabella/" role="button">Vai alla pagina</a>
+                    <a href="/esercizi/form/" role="button">Vai alla pagina</a>
                 </center>
             </details>
         </div>
@@ -35,7 +35,7 @@
                         <h2>Upload di un file, aggiunta di codice tramite include.</h2>
                         <p>Nel dubbio ho anche aggiunto la verifica, perche? boh.</p>
                     </hgroup>
-                    <a href="/esercizi/tabella/" role="button">Vai alla pagina</a>
+                    <a href="/esercizi/upload/" role="button">Vai alla pagina</a>
                 </center>
             </details>
         </div>
