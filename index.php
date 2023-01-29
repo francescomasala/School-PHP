@@ -47,7 +47,7 @@
                         <h2>Sei curioso sulle info di questa install di php?</h2>
                         <p>Non hai altro da fare?</p>
                     </hgroup>
-                    <a href="/esercizi/tabella/" role="button">Ficcanaso uh?</a>
+                    <a href="/phpinfo.php" role="button">Ficcanaso uh?</a>
                 </center>
             </details>
         </div>
