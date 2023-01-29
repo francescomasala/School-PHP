@@ -1,100 +1,56 @@
-<!DOCTYPE html>
-<html lang="it-IT">
-
-<head>
-    <!-- RIFERIMENTI GENERICI -->
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <title>Home Page</title>
-
-    <!-- RIFERIMENTI BOOTSTRAP ITALIA 2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.0.4/dist/css/bootstrap-italia.min.css"
-          integrity="sha256-OAlsfaN58WYNlpH0uSz3xuJ8vrujFxoIlIFr8rySXqc=" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.0.4/dist/js/bootstrap-italia.bundle.min.js"></script>
-
-</head>
-<body>
-<script>
-    window.__PUBLIC_PATH__ = 'https://cdn.jsdelivr.net/npm/bootstrap-italia@2.0.4/dist/fonts'
-</script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.0.4/dist/js/bootstrap-italia.bundle.min.js"
-        crossorigin="anonymous"></script>
-<header class="it-header-wrapper">
-
-    <style>
-        table, tr, td {
-            border: 1px solid #0066CC;
-        }
-
-        td {
-            padding: 5px;
-        }
-    </style>
-    <!-- SNIPPET NAVBAR -->
-
-    <div class="it-header-center-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="it-header-center-content-wrapper">
-                        <div class="it-brand-wrapper">
-                            <a href="/">
-                                <div class="it-brand-text">
-                                    <div class="it-brand-title">Esercizi PHP Masala</div>
-                                    <div class="it-brand-tagline d-md-block">Sito web in php per il quinto anno</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="it-right-zone">
-                            <h4><?php echo $_SERVER["SERVER_SOFTWARE"]?></h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<?php include 'assets/head.php'; ?>
+<div class="container-fluid">
+    <div class="grid">
+        <div>
+            <details>
+                <summary role="button">Primo Esercizio</summary>
+                <center>
+                    <hgroup>
+                        <h2>Sono due semplici tabelle, una statica ed una dinamica.</h2>
+                        <p>La seconda (quella dinamica) riceve informazioni da un form tramite una richiesta POST</p>
+                    </hgroup>
+                    <a href="/esercizi/tabella/" role="button">Vai alla pagina</a>
+                </center>
+            </details>
+        </div>
+        <div>
+            <details>
+                <summary role="button" class="secondary">Secondo Esercizio</summary>
+                <center>
+                    <hgroup>
+                        <h2>Sono dei form molto ez con validazione.</h2>
+                        <p>Sono passivo aggressivo? assolutamente si'.</p>
+                    </hgroup>
+                    <a href="/esercizi/tabella/" role="button">Vai alla pagina</a>
+                </center>
+            </details>
         </div>
     </div>
-</header>
-        <div class="row" style="margin: 30px">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card-wrapper card-space">
-                    <div class="card card-bg shadow card-big no-after">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <h5 class="card-title h5">PHP Info</h5>
-                                    <p class="card-text">Perche' ho deciso di farlo? Boh, chi lo sa</p>
-                                    <div class="it-card-footer">
-                                        <a href="phpinfo.php">Nel dubbio clicca qua</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                        <div class="card-wrapper card-space">
-                            <div class="card card-bg shadow card-big no-after">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h5 class="card-title h5">Tabella tabellosa e dinamica</h5>
-                                            <p class="card-text">Perche' ho deciso di farlo? Mi piacciono le tabelle dinamiche, problemi?</p>
-                                            <div class="it-card-footer">
-                                                <a href="/esercizi/formTable.php">Se le ami anche te clicca qua</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="grid">
+        <div>
+            <details>
+                <summary role="button" class="secondary">Terzo Esercizio</summary>
+                <center>
+                    <hgroup>
+                        <h2>Upload di un file, aggiunta di codice tramite include.</h2>
+                        <p>Nel dubbio ho anche aggiunto la verifica, perche? boh.</p>
+                    </hgroup>
+                    <a href="/esercizi/tabella/" role="button">Vai alla pagina</a>
+                </center>
+            </details>
         </div>
-</body>
-</html>
+        <div>
+            <details>
+                <summary role="button" class="contrast">PHP Info</summary>
+                <center>
+                    <hgroup>
+                        <h2>Sei curioso sulle info di questa install di php?</h2>
+                        <p>Non hai altro da fare?</p>
+                    </hgroup>
+                    <a href="/esercizi/tabella/" role="button">Ficcanaso uh?</a>
+                </center>
+            </details>
+        </div>
+    </div>
+</div>
+<?php include 'assets/footer.php'; ?>
