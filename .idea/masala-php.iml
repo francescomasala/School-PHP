@@ -13,5 +13,6 @@
     <orderEntry type="library" name="popper.js" level="application" />
     <orderEntry type="library" name="@picocss/pico" level="application" />
     <orderEntry type="library" name="@picocss/pico" level="application" />
+    <orderEntry type="library" name="@picocss/pico" level="application" />
   </component>
 </module>
