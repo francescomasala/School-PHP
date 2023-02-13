@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $curl = curl_init();
 
-    curl_setopt_array($curl, [CURLOPT_URL => "https://meteostat.p.rapidapi.com/stations/daily?station=10637&start=2023-02-13&end=2023-02-13&model=true&freq=B", CURLOPT_RETURNTRANSFER => true, CURLOPT_FOLLOWLOCATION => true, CURLOPT_ENCODING => "", CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 30, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => "GET", CURLOPT_HTTPHEADER => ["X-RapidAPI-Host: meteostat.p.rapidapi.com", "X-RapidAPI-Key: "],]);
+    curl_setopt_array($curl, [CURLOPT_URL => "https://meteostat.p.rapidapi.com/stations/daily?station=$weatherStation&start=2023-02-13&end=2023-02-13&model=true&freq=B", CURLOPT_RETURNTRANSFER => true, CURLOPT_FOLLOWLOCATION => true, CURLOPT_ENCODING => "", CURLOPT_MAXREDIRS => 10, CURLOPT_TIMEOUT => 30, CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1, CURLOPT_CUSTOMREQUEST => "GET", CURLOPT_HTTPHEADER => ["X-RapidAPI-Host: meteostat.p.rapidapi.com", "X-RapidAPI-Key: "],]);
 
     $response = curl_exec($curl);
     $err = curl_error($curl);
@@ -29,10 +29,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $obj = json_decode($response);
         ?>
-        <div class="container"
-        <center>
-            <hgroup>
-                <h2>Previsioni per <?php
+        <div class="container">
+            <center>
+                <hgroup>
+                    <h2>Previsioni per <?php
                     if ($weatherStation == "16023") {
                         echo "Trento";
                     } elseif ($weatherStation == "16020") {
@@ -105,8 +105,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <?php
             }
             ?>
-        </center>
+            </center>
+        </div>
         <?php
+        include 'footer.php';
     }
 } else {
     ?>
@@ -135,5 +137,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </center>
     </div>
     <?php
+    include 'footer.php';
 }
 ?>
